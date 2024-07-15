@@ -1,5 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget"
 import './NavBar.css'
+import { Link } from "react-router-dom"
 
 function NavBar() {
     return (
@@ -7,23 +8,23 @@ function NavBar() {
 
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">WAPSONLINE</a>
+                    <a className="navbar-brand" href="/">WAPSONLINE</a>
 
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">APPLE</a>
+                            <Link className="nav-link active" aria-current="page" to="/category/apple">APPLE</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">SAMSUNG</a>
+                            <Link className="nav-link" aria-current="page" to="/category/samsung">SAMSUNG</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">ACCESORIOS</a>
+                            <Link className="nav-link" aria-current="page" to="/category/consoles">CONSOLAS</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">CONSOLAS</a>
+                            <Link className="nav-link" aria-current="page" to="/category/accesories">ACCESORIOS</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">CONTACTOS</a>
+                            <Link className="nav-link" aria-current="page" to="/contactos">CONTACTOS</Link>
                         </li>
                     </ul>
 
