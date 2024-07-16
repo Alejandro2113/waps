@@ -1,20 +1,24 @@
-.art{
+.artid{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-items: center;
     margin: 20px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
-    width: 250px;
+    width: 100%;
     background-color: bisque;
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
-.imgArt {
-    width: 200px;
+.detailsid{
+    padding: 0px 25px;
+    width: 50%;
+}
+
+.imgArtid{
+    width: 400px;
     padding: 15px 5px;
     background-color: white;
     border-radius: 5px;

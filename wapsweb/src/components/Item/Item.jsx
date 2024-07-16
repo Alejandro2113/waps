@@ -3,16 +3,17 @@ import './item.css'
 
 Link
 
-const Item = ({ name, img, category, price, stock }) => {
+const Item = ({id, name, img, category, price, stock, description, }) => {
   return (
     <article className="art">
 
       <h2>{name}</h2>
       <img src={img} className="imgArt" />
       <p>Categoria: {category}</p>
-      <h3>Precio: ${price}</h3>
-      <h3>Inventario: {stock}</h3>
-      <Link to={'/detail/${id}'}>Mas detalles</Link>
+      <h3>Precio: ${price}.00 </h3>
+      <h5>Inventario: {stock}</h5>
+      <p>Descripcion: {description}</p>
+      <Link to={`/detail/${id}`}>Mas detalles</Link>
 
     </article>
   )
